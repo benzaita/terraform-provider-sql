@@ -10,5 +10,7 @@ services:
     environment: []
     volumes:
       - '/var/run/docker.sock:/var/run/docker.sock'
+      - go-cache:/go
     network_mode: host
-volumes: {}
+volumes:
+  go-cache: {}
